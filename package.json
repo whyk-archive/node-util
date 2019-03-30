@@ -1,0 +1,20 @@
+{
+  "name": "@windchime-yk/util",
+  "version": "1.0.0",
+  "description": "WhyK use util scripts",
+  "scripts": {
+    "build": "tsc --outDir dist/ src/util.ts -d"
+  },
+  "files": [
+    "dist",
+    "package-lock.json",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "WhyK",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  }
+}
