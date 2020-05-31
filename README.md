@@ -1,3 +1,2 @@
 # util
-WhyKが何かしらに使うJavaScript便利ファイル  
-作りたかっただけとも言う
+Node環境で、TypeScriptとSCSSの便利な何かしらを利用するためのプロジェクト。
