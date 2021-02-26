@@ -1,6 +1,6 @@
 {
   "name": "@windchime-yk/util",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "WhyK use util scripts",
   "scripts": {
     "build": "tsc --outDir dist/ src/ts/util.ts -d"
