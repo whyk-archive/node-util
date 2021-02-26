@@ -1,0 +1,22 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  gh-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12.x'
+        registry-url: 'https://npm.pkg.github.com'
+    - name: Publish Package
+      run: |
+        yarn
+        yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
